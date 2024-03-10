@@ -2,11 +2,17 @@ import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 const userSchema = new Schema({
-    username: String,
+    username: {
+        type: String,
+    },
     fullname: String,
-    googleId: String,
-    profilePicture: String
+    profileId: String,
+    profilePicture: String,
+    provider: {
+        type: String,
+        required: true,
+    },
 });
 
-const User = mongoose.model('user', userSchema);
+const User = mongoose.model('User', userSchema);
 export default User;

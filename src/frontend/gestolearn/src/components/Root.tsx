@@ -1,17 +1,20 @@
 import { Outlet } from "react-router";
-import Header from "./Header/Registered/Header";
+import Header from "./Header/Header";
 
 
-function RootLayout() {
-  
+interface RootLayoutProps {
+  user: any;
+}
+
+const RootLayout: React.FC<RootLayoutProps> = ({ user }) => {
   return (
     <>
-      <Header />
+      <Header user={user} />
       <main>
         <Outlet />
       </main>
     </>
   );
-}
+};
 
 export default RootLayout;

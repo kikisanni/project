@@ -1,0 +1,47 @@
+.progress-bar {
+    font-family: Arial, sans-serif;
+    margin-bottom: 1rem; /* Space between each progress bar */
+  }
+  
+  .label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .bar-container {
+    background-color: #eee;
+    border-radius: 8px;
+    position: relative; /* Needed to position the value inside the bar */
+    height: 20px; 
+    width: 200px;
+  }
+  
+  .bar {
+    background-color: #90CAF9;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    transition: width 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap; 
+  }
+  
+  .bar-value {
+    color: #313131c9;
+    font-weight: bold;
+    z-index: 1; /* Ensures the text is above the bar background */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+  .label {
+    font-size: 18px; 
+    font-weight: bold; 
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }

@@ -1,6 +1,7 @@
 import login from "../../assets/login.jpg";
 import logo from "../../assets/logo.png";
 import UsernameForm from "./UsernameForm";
+import '../../../App.css';
 
 function Username() {
   return (
@@ -11,7 +12,7 @@ function Username() {
 
     <div>
       <div className="flex justify-center items-center">
-        <div className="bg-white p-8 shadow-2xl shadow-blue-200 flex gap-x-14">
+        <div className="bg-white p-8 shadow-2xl shadow-gray-400 flex gap-x-14">
           <div>
             <img src={login} alt="login-image" className=" size-72" />
           </div>
